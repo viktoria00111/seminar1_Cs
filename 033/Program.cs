@@ -1,14 +1,25 @@
 ﻿//33.Возведите число А в натуральную степень B используя цикл
-double Stepen(int a,int b);
-{
-    return Math.Sqrt(Math.Pow(a,b));
+  Console.Write("Введите a: "); // Число
+  int num = int.Parse(Console.ReadLine());
+  
+  Console.Write("Введите b: "); // Степень
+  int n = int.Parse(Console.ReadLine());
+  
+  int num_n=1;
+  for(int i=0; i<n; i++) 
+    {
+      num_n*=num;
+    }
+  Console.WriteLine($"{num} ^ {n} = {num_n}");
+  Console.ReadKey();
+  return 0;
+ 
+
+ 
+
     
-}
 
-{
-    Console.ReadKey();
-}
-double a=5,b=4;
 
-double stepen= Stepen(4,5);
-Console.WriteLine($"Натуральное число в степени=  {stepen}");
+
+
+
