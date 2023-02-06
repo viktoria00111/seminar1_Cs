@@ -1,12 +1,20 @@
-﻿//34. Вывести на экран кубы чисел от 1 до N
+﻿//34. Определить количество цифр в числе. Сделать подпрограмму.
 
-
-Random random =new Random();//создали объект
-for(int i=0;i<10;i++)
+int CounterDigits(int n)
 {
-    int a=random.Next(1,10);
-    int b=(int)Math.Pow(a,3);
-    if(b%2==0);
+    if (n==0) 
+        return 1;//пограничный случай
 
-      System.Console.WriteLine($"{a},{b}");
+    int counter=0;//счетчик
+    while(n!=0)
+    {
+        counter++;
+        n/=10;//n=n/10
+    }
+    //System.Console.WriteLine(counter);//мусорный вывод
+    return counter;
 }
+
+//Вывод только в основной подпрограмме
+int N=Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine(CounterDigits(N));
