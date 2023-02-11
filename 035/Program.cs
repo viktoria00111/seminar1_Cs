@@ -1,20 +1,11 @@
-﻿//35.Подсчитать сумму цифр в числе. Сделать подпрограмму.
-int n=2001;
-System.Console.WriteLine($"Заданное число={n} ");
+﻿//35. Подсчитать сумму цифр в числе. Сделать подпрограмму.
 
-//счетчик
+int n=1456;
+int s=0;
+while(n!=0)
+{
+    s=s+n%10;
+    n=n/10;
+}
 
-    int counter=0;
-    int sum=0;
-    while(n!=0)
-    {
-        counter++;
-        int d=n%10;
-        sum+=d;
-        n/=10;
-    }
-
-
-System.Console.WriteLine(counter);
-System.Console.WriteLine(sum);
-
+Console.WriteLine($"s={s}");

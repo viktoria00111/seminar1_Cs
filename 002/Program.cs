@@ -9,4 +9,5 @@ b=Convert.ToDouble(s);
 
 if (a*a==b)    
     System.Console.WriteLine("b является квадратом a");
+if (b*b==a)    
     System.Console.WriteLine("a является квадратом b");

@@ -18,3 +18,4 @@ int CounterDigits(int n)
 //Вывод только в основной подпрограмме
 int N=Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine(CounterDigits(N));
+
