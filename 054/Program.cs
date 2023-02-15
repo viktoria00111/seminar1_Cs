@@ -7,4 +7,4 @@ a=Convert.ToInt32(Console.ReadLine());
 
 if (b>a*a && a<2)
          System.Console.WriteLine("Являются равным   0 и 1"); 
-    else System.Console.WriteLine("Не являются равным  0 и 1");
+    else System.Console.WriteLine("Не являются равным  0 и 1.");
