@@ -7,6 +7,6 @@ PrintArray(a);
 void PrintArray(int[] a)
 {
     for(int i=0;i<a.Length;i++)
-        System.Console.Write($"{a[i]} ");
+        System.Console.Write($"{a[i]}. ");
 }
 
