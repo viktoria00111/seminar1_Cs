@@ -1,12 +1,6 @@
 ﻿// 56.Написать программу копирования массива
 
-int[] a= {3, 2, 7, 1, 9,3,8};
-
-PrintArray(a);
-
-void PrintArray(int[] a)
-{
-    for(int i=0;i<a.Length;i++)
-        System.Console.Write($"{a[i]}. ");
-}
-
+ int[] a = { 1, 4, 8, 56, 3, 43, 23, 64, 53 };
+ int[] copy = new int[a.Length];
+ Array.Copy(a, copy, a.Length);
+ System.Console.WriteLine(string.Join(",", copy));
